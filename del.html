@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Generator</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #0074cc;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005aa7;
+        }
+
+        #qrcode {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>QR Code Generator</h1>
+    <input type="text" id="text-input" placeholder="Enter text to encode">
+    <label for="background-color-picker">Background Color:</label>
+    <input type="color" id="background-color-picker" value="#FFFFFF"> <!-- Default white background -->
+    <label for="foreground-color-picker">QR Code Color:</label>
+    <input type="color" id="foreground-color-picker" value="#000000"> <!-- Default black QR code color -->
+    <button id="generate-button">Generate QR Code</button>
+    <canvas id="qrcode"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+    <script>
+        const textInput = document.getElementById("text-input");
+        const backgroundColorPicker = document.getElementById("background-color-picker");
+        const foregroundColorPicker = document.getElementById("foreground-color-picker");
+        const qrCodeCanvas = document.getElementById("qrcode");
+
+        const generateQRCode = () => {
+            const text = textInput.value;
+            const backgroundColor = backgroundColorPicker.value;
+            const foregroundColor = foregroundColorPicker.value;
+
+            if (text.length > 0) {
+                const qr = new QRious({
+                    element: qrCodeCanvas,
+                    value: text,
+                    size: 128,
+                    background: backgroundColor,
+                    foreground: foregroundColor,
+                });
+            }
+        };
+
+        // Add input event listeners to the text input and color pickers to update the QR code live
+        textInput.addEventListener("input", generateQRCode);
+        backgroundColorPicker.addEventListener("input", generateQRCode);
+        foregroundColorPicker.addEventListener("input", generateQRCode);
+
+        // Initial generation of the QR code based on default values
+        generateQRCode();
+    </script>
+</body>
+</html>

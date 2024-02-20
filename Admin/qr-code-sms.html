@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/liabs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- Css -->
+    <link rel="stylesheet" href="../css/main2.css">
+    <link rel="stylesheet" href="../css/main4.css">
+    <title>QR Code-SMS</title>
+</head>
+<style>
+    .main-nav .qr-code{
+        background-color: #1B51A4 !important;
+    }
+</style>
+<body>
+    <!-- ============= nav start ========= -->
+       <section class="nav-sec bg-myblue m-3 p-3 rounded-4">
+           <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between position-relative">
+              <div class="d-xl-none d-block">
+                 <button class="border bg-transparent px-2 py-1 rounded-3" id="main-bars"><i class="fa-solid fa-bars"></i></button>
+              </div>
+              <div class="d-flex align-items-center position-line">
+                  <h4 class="cl-darkblue fw-normal mb-0">QR</h4>
+                  <h4 class="text-white ms-2 fw-normal mb-0">Scanner</h4>
+              </div>
+              <div class="display-screen">
+                 <ul class="list-unstyled d-flex align-items-center mb-0 main-nav">
+                    <li><a href="dashboard.html" class="text-decoration-none text-white dashboard py-2 px-3 rounded-3 light-blue-bg me-3 d-flex align-items-center"><img src="../images/menu-bar-2.png" alt="" class="menu-img me-1">Dashboard</a></li>
+                    <li><a href="qr-code.html" class="text-decoration-none text-white qr-code py-2 px-3 rounded-3 me-3 light-blue-bg d-flex align-items-center"><img src="../images/menu-bar-1.png" alt="" class="menu-img me-1">QR Codes</a></li>
+                    <li><a href="analytics.html" class="text-decoration-none text-white analytic py-2 px-3 rounded-3 me-3 light-blue-bg d-flex align-items-center"><img src="../images/menu-bar-3.png" alt="" class="menu-img me-1">Analytics</a></li>
+                    <li><a href="folders.html" class="text-decoration-none text-white folder py-2 px-3 rounded-3 me-3 light-blue-bg d-flex align-items-center"><img src="../images/menu-bar-4.png" alt="" class="menu-img me-1">Folders</a></li>
+                    <li><a href="archives.html" class="text-decoration-none text-white archive py-2 px-3 rounded-3 me-3 light-blue-bg d-flex align-items-center"><img src="../images/menu-bar-5.png" alt="" class="menu-img me-1">Archives</a></li>
+                 </ul>
+              </div>
+            <div class="d-flex align-items-center">
+                <div class="me-3">
+                    <a href="#" class="text-decoration-none text-dark"><i class="fa-solid fa-power-off text-white"></i></a>
+                </div>
+                <div>
+                    <a href="#" class="text-decoration-none text-dark"><img src="../images/profile-img.png" alt="" class="profile-img"></a>
+                </div>
+            </div>
+            </div>
+           </div>
+       </section>
+       <section>
+          <div class="container">
+            <div class="row mt-sm-0 mt-3">
+                    <div class="col-xl-8 col-lg-9 bg-white rounded-4 p-4 shadow-sm">
+                        <h2 class="d-flex">Create a new QR Code-<p class="blue-button-cl">SMS</p></h2>
+                        <div class="height-qr">
+                            <div class="row">
+                                <div class="col-md-9">
+                                <div class="d-flex position-relative justify-content-between">
+                                    <div><p class="blue-button-bg py-2 px-3 rounded-3 mb-0 text-white">1</p></div>
+                                    <div class="position-relative"><span class="position-line2"></span></div>
+                                    <p class="blue-button-bg py-2 px-3 rounded-3 text-white">2</p>
+                                    <div class="position-relative"><span class="position-line2"></span></div>
+                                    <p class="light-grey-bg py-2 px-3 rounded-3 grey-clr">3</p>
+                                </div>
+                            <div>
+                                <p>Step 2: Enter Information</p>
+                                <form action="qr-code-sms2.html" id="myForm">
+                                    <div>
+                                    <h5 class="fw-normal">Add Content</h5>
+                                    <div>
+                                        <label for="" class="font-13">Receipt phone number*</label>
+                                        <input type="tel" name="" id="" placeholder="Enter Phone number" class="form-control shadow-none light-grey-bg border-0">
+                                    </div>
+                                    <div class="mt-3">
+                                        <span class="font-12">Text (upto 300 characters)*</span>
+                                        <textarea name="" id="" cols="30" rows="4" class="form-control shadow-none light-grey-bg border-0" placeholder="Enter your text here"></textarea>
+                                    </div>
+                                    </div>
+                                    <h5 class="mt-3">Internal notes</h5>
+                                    <div>
+                                    <label for="for-name" class="form-label font-13 ps-2 mb-0">Name your code</label>
+                                    <input type="text" name="" id="for-name" class="form-control shadow-none light-grey-bg border-0" placeholder="Enter name">
+                                    </div>
+                                    <div class="mt-3">
+                                    <label for="" class="form-label font-13 mb-0 ps-2">Folder</label>
+                                    <div class="dropdown">
+                                        <button class="form-select shadow-none light-grey-bg border-0 text-start grey-clr" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Folder
+                                        </button>
+                                        <ul class="dropdown-menu w-100 p-3">
+                                          <li class="blue-button-cl pointer" data-bs-toggle="modal" data-bs-target="#folderModal"><i class="bi bi-plus blue-button-cl fs-5"></i> Add new Folder</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mt-3">
+                                        <div>
+                                            <a href="create-qr-code.html" class="text-decoration-none"><button type="button" class="light-blue2 px-5 py-2 blue-button-cl border-0 rounded-3">Cancel</button></a>
+                                        </div>
+                                        <div class="ms-3">
+                                            <a href="qr-code-sms2.html" class="text-decoration-none"><input type="submit" value="Next" class="blue-button-bg border-0 px-5 py-2 text-white rounded-3"></a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 py-5 px-5">
+                        <h3 class="fw-normal">Preview</h3>
+                        <div class="mt-3">
+                            <img src="https://chart.apis.google.com/chart?cht=qr&chs=250x250&chl=" alt="" class="new-qr-img">
+                        </div>
+                        <div class="mt-5">
+                            <h6 class="text-dark">Scan to see your QR code live.</h6>
+                            <p class="grey-clr mb-0 font-13">You will be able to modify and customize the design of the code in the final step of this code creation process.</p>
+                        </div>
+                    </div>
+            </div>
+          </div>
+       </section>
+
+        <!-- ========= Modal ======= -->
+        <div class="modal fade" id="folderModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content rounded-4">
+                <div class="modal-header bg-modal rounded-modal">
+                 <div class="d-flex align-items-center">
+                    <img src="/images/folder-2.png" alt="" class="img-folder2">
+                    <h4 class="modal-title fs-6 blue-button-cl fw-normal ps-2" id="exampleModalLabel">Create Folder</h4>
+                 </div>
+                </div>
+                <div class="modal-body px-sm-5">
+                  <form action="">
+                    <div class="mb-5">
+                        <label for="" class="blue-button-cl form-label">Folder name</label>
+                        <input type="text" class="form-control shadow-none light-blue2 border-0 folder-place" placeholder="Folder name here">
+                    </div>
+                    <div class="mt-4 d-flex align-items-center">
+                       <div class="w-100 me-3">
+                            <button type="button" class="bl-bg w-100 border-0 py-2 px-sm-5 rounded-3 button-clr" data-bs-dismiss="modal">Cancel</button>
+                       </div>
+                       <div class="w-100">
+                            <button type="button" class="button-bg w-100 border-0 py-2 px-sm-5 rounded-3 text-white">Create</button>
+                        </div>
+                      </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    <!-- Bootsrtap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- slick slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Js -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

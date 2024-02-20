@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-before {
+    width: max-content;
+}
+.nav-before.active:before {
+    position: absolute;
+    content: '';
+    background: var(--myblue);
+    width: 40%;
+    height: 3px;
+    bottom: 0;
+}
+.blue-clr{
+    color: #3278E4;
+}
+.bg-blue1{
+    background-color: #E2F0FE;
+}
+.getstarted input:focus{
+    background: #fff!important;
+    border: none!important;
+    outline: none!important;
+}
+.navbar{
+    z-index: 2;
+}
+.heroimg{
+    position: absolute;
+    top: 0; 
+    right: 0;
+    bottom: 80px;
+    border-radius: 0px 0px 0px 40px;
+}
+.heroimg img{
+    width: 200px
+}
+.boxr{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-left: 20px;
+}
+.barcode img{
+    width: 150px;
+}
+.ourservice .mycontainer {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100%;
+}
+.choose{
+    height:calc(100vh - 50px);
+    overflow-y: auto;
+}
+.choose::-webkit-scrollbar {
+    width: 0px;
+  }
+.choose .mycontainer {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100%;
+}
+.client .mycontainer {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100%;
+}
+.blogs .mycontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100%;
+}
+.fw-semi{
+    font-weight:500;
+}
+.serv-img {
+    width: 60px;
+}
+.phone-img {
+    width: 320px;
+}
+.wifi-txt {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 30px;
+    height: 450px;
+    overflow: auto;
+}
+.peach-bg{
+    background-color: #FFF9DC;
+}
+.lightble-bg{
+  background-color: #EBF1FC;
+}
+.lightblue-bg{
+    background-color: #EBF1FC;
+}
+.skyblue-bg{
+    background-color: #D7EDFF;
+}
+.contact-btn{
+    border: solid 1px #3278E4;
+}
+.lightgray-bg{
+    background-color: #F7F7F7;
+}
+.greenish-bg{
+    background-color: #E0FFDB;
+}
+.purplish-bg{
+    background-color: #E4E7F1;
+}
+.prev_arrow{
+    top: 50%;
+    transform: translatey(-50%);
+    left: -20px;
+    
+}
+.next_arrow{
+    top:50%;
+    transform: translatey(-50%);
+    right: -20px;
+}
+.slid-img{
+    width: 140px
+}
+.blue-bg{
+    background-color: #3278E4;
+}
+.card{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 30px;
+}
+.serv-box{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 30px;
+    background: #fff;
+}
+.serv-box:hover{
+    background: var(--myblue);
+    color: #fff;
+}
+.card img{
+    border-radius: 30px 30px 0px 0px;
+}
+.hand-img{
+    width: 90px;
+}
+
+.center .slick-track{
+    display: flex;
+    align-items: center;
+}
+.center .crd{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    /* width: 350px; */
+}
+.crd {
+    height: 350px;
+}
+textarea{
+    resize: none;
+}
+
+.contact input:focus{
+    background-color:#EBF1FC !important;
+    outline: none;
+    box-shadow: none;
+    border: solid 1px #3278E4;
+}
+.contact textarea:focus{
+    background-color:#EBF1FC !important;
+    outline: none;
+    box-shadow: none;
+    border: solid 1px #3278E4; 
+}
+.contact input{
+    border: solid 1px #3278E4;
+}
+.contact textarea{
+    border: solid 1px #3278E4; 
+}
+.contact1 input:focus{
+    background-color:#EBF1FC !important;
+    outline: none;
+    box-shadow: none;
+    border: solid 2px #DFEEFE;
+}
+.contact1 textarea:focus{
+    background-color:#DFEEFE !important;
+    outline: none;
+    box-shadow: none;
+    border: solid 2px #DFEEFE; 
+}
+.contact1 input{
+    border: solid 2px #DFEEFE;
+}
+.contact1 textarea{
+    border: solid 2px #DFEEFE; 
+}
+hr{
+    color: #EBF1FC;
+    height: 2px;
+}
+.footer li a{
+    text-decoration: none;
+        color: #fff;
+        font-size: 18px
+    }
+    .footer ul{
+        list-style: none;
+    }
+
+    .blogs-img img {
+        width: 60px;
+    }
+    .card-img-service {
+        width: 50px;
+    }
+    .card1{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 30px;
+        height: 100%;
+    }
+    .blue-img {
+        width: 50px;
+    }
+    .expert img{
+        width: 200px;
+    }
+    .card2{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 30px;
+        height: 450px;
+    }
+    .Benefits img{
+        border-radius: 30px;
+    }
+    .brd{
+        border-right: solid 2px #6A9DEC;
+    }
+    .items{
+        border: solid 1px #3278E4;
+        border-radius: 15px;
+    }
